@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/plugins/pluginStarter">
+        <file>runIcon.png</file>
+    </qresource>
+</RCC>
