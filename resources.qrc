@@ -2,4 +2,4 @@
   <qresource prefix="/plugins/pluginsStarter" > 
     <file>icon.png</file> 
   </qresource> 
-</RCC> 
+</RCC>
