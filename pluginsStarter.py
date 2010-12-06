@@ -58,13 +58,13 @@ class pluginsStarter:
     
     #SETTINGS ACTION
     # Create action that will start plugin configuration
-    self.settingsAction = QAction(QIcon(":/plugins/pluginsStarter/reload.png"), \
+    self.settingsAction = QAction(QIcon(":/plugins/pluginsStarter/icon.png"), \
         self.settingsActionName, self.iface.mainWindow())
     # connect the action to the settings method
     QObject.connect(self.settingsAction, SIGNAL("triggered()"), self.configure)    
     
     # Add toolbar button and menu item
-    self.iface.addToolBarIcon(self.settingsAction)
+    #self.iface.addToolBarIcon(self.settingsAction)
     self.iface.addPluginToMenu("&Plugins Starter", self.settingsAction)
     self.settingsAction.setWhatsThis(self.settingsActionText)
     self.settingsAction.setStatusTip(self.settingsActionText)
@@ -78,7 +78,7 @@ class pluginsStarter:
     self.iface.removePluginMenu("&Plugins Starter", self.runAction)
     self.iface.removePluginMenu("&Plugins Starter", self.settingsAction)
     self.iface.removeToolBarIcon(self.runAction)
-    self.iface.removeToolBarIcon(self.settingsAction)
+    #self.iface.removeToolBarIcon(self.settingsAction)
 
   # run method that performs all the real work
   def run(self):    
