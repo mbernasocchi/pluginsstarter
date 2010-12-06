@@ -18,7 +18,6 @@ email                : marco@bernawebdesign.ch
  *                                                                         *
  ***************************************************************************/
 """
-#TODO: read the settings on __init__ without need to open the configure dialog first
 #FIXME: fix icons 
 from PyQt4.QtCore import *
 from PyQt4.QtGui import *
