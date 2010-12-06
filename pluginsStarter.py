@@ -22,6 +22,7 @@ email                : marco@bernawebdesign.ch
 from PyQt4.QtCore import *
 from PyQt4.QtGui import *
 from qgis.core import *
+import resources_rc
 # Initialize Qt resources from file resources_rc.py
 # import resources is done in Ui_pluginsStarter
 # Import the code for the dialog
@@ -44,8 +45,8 @@ class pluginsStarter:
   def initGui(self):
     #RUN ACTION
     # Create action that will start plugin
-    self.runAction = QAction(QIcon(":/plugins/pluginsStarter/runIcon.png"), \
-        self.runActionName , self.iface.mainWindow())
+    self.runAction = QAction(QIcon(":/plugins/pluginsStarter/icon.png"), \
+      self.runActionName , self.iface.mainWindow())
     # connect the action to the run method
     QObject.connect(self.runAction, SIGNAL("triggered()"), self.run)
     

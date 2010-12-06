@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'Ui_pluginsStarter.ui'
 #
-# Created: Mon Dec  6 12:31:56 2010
+# Created: Mon Dec  6 18:26:28 2010
 #      by: PyQt4 UI code generator 4.7.4
 #
 # WARNING! All changes made in this file will be lost!
