@@ -1,0 +1,14 @@
+****************************************************************************
+pluginsStarter
+A QGIS plugin
+Start multiple plugins in one click
+                             -------------------
+begin                : 2010-08-18 
+copyright            : (C) 2010 by Marco Bernasocchi BERNAWEBDESIGN.CH
+email                : marco@bernawebdesign.ch 
+**************************************************************************** 
+This Qgis (www.qgis.org) plugin allows executing multiple plugins actions at once.
+The available actions are (for now) the ones that have a plugins toolbar icon.
+
+TODO:
+- add actions from plugin menu 
