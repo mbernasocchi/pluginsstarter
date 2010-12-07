@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'Ui_pluginsStarter.ui'
 #
-# Created: Tue Dec  7 10:00:06 2010
+# Created: Tue Dec  7 12:36:21 2010
 #      by: PyQt4 UI code generator 4.7.4
 #
 # WARNING! All changes made in this file will be lost!
@@ -41,6 +41,8 @@ class Ui_pluginsStarterGuibase(object):
         self.gridLayout.addLayout(self.verticalLayout_2, 0, 0, 1, 1)
 
         self.retranslateUi(pluginsStarterGuibase)
+        QtCore.QObject.connect(self.buttonBox, QtCore.SIGNAL("accepted()"), pluginsStarterGuibase.accept)
+        QtCore.QObject.connect(self.buttonBox, QtCore.SIGNAL("rejected()"), pluginsStarterGuibase.reject)
         QtCore.QMetaObject.connectSlotsByName(pluginsStarterGuibase)
 
     def retranslateUi(self, pluginsStarterGuibase):

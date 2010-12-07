@@ -58,6 +58,6 @@ class pluginsStarterDialog(QDialog):
         self.main.runActions.append( checkbox['action'] )
       else:
         self.settings.setValue( '/PluginsStarter/' + checkbox['box'].text(), QVariant( False ) )
-
+    
   def on_buttonBox_accepted(self):
     self.updateSettings()

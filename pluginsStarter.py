@@ -68,10 +68,6 @@ class pluginsStarter:
     self.iface.addPluginToMenu("&Plugins Starter", self.settingsAction)
     self.settingsAction.setWhatsThis(self.settingsActionText)
     self.settingsAction.setStatusTip(self.settingsActionText)
-    
-    #read settings
-    pluginsStarterDialog(self).updateSettings()
-    
 
   def unload(self):
     # Remove the plugin menu item and icon
@@ -81,7 +77,10 @@ class pluginsStarter:
     #self.iface.removeToolBarIcon(self.settingsAction)
 
   # run method that performs all the real work
-  def run(self):    
+  def run(self):
+    #try to read settings (during __init__ there are no actions available yet)
+    if 0 == len(self.runActions):
+      pluginsStarterDialog(self).updateSettings()  
     if 0 < len(self.runActions):
       for action in self.runActions:
         action.activate(action.Trigger)
