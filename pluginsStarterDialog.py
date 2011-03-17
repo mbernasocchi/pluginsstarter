@@ -59,5 +59,6 @@ class pluginsStarterDialog(QDialog):
       else:
         self.settings.setValue( '/PluginsStarter/' + checkbox['box'].text(), QVariant( False ) )
     
+  @pyqtSlot()
   def on_buttonBox_accepted(self):
     self.updateSettings()
