@@ -27,9 +27,9 @@ def name():
 def description():
   return "Start multiple plugins in one click"
 def version():
-  return "Version 0.3.2"
+  return "Version 1.0"
 def qgisMinimumVersion():
-  return "1.0"
+  return "1.6"
 def classFactory(iface):
   # load pluginsStarter class from file pluginsStarter
   from pluginsStarter import pluginsStarter
